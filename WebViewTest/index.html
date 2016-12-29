@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>测试页面</title>
+		<style>
+			body{
+				text-align: center;
+			}
+			form{
+				margin: 40px auto 0 auto;
+			}
+			button{
+				width: 80%;
+				height: 30px;
+				background-color: darkorange;
+				border: none;
+				border-radius: 5;
+				color: white;
+				margin-top: 10px;
+			}
+			input{
+				width: 80%;
+				height: 30;
+				margin-top: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<input id="name" type="text" placeholder="name" /><br />
+			<input id="pwd" type="password" /><br />
+			<button onclick="showInputValue()">提交</button>
+		</form>
+		<script>
+			function showInputValue(){
+				var name = document.getElementById("name").value;
+				var pwd = document.getElementById("pwd").value;
+				alert(name+"---"+pwd);
+                getValues(name,pwd)
+            }
+            function getValues(name,pwd){
+            
+            }
+		</script>
+	</body>
+</html>
